@@ -20,7 +20,7 @@ export const WeatherProvider = ({ children }: { children: ReactNode }) => {
       const response = await res.json();
       const { lat, lon } = response[0];
 
-      const urlWeather = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${appId}`;
+      const urlWeather = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${appId}`;
       const res2 = await fetch(urlWeather);
       const responseWeather = await res2.json();
 
