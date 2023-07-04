@@ -29,7 +29,7 @@ export default function AddLinkModal({
       return;
     }
     let linkToUse = link;
-    if (!link.startsWith("http://")) {
+    if (!link.startsWith("http://") || !link.startsWith("https://")) {
       linkToUse = "http://" + link;
     }
     const newElement = {

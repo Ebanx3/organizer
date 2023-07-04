@@ -29,7 +29,7 @@ export default function Container({
         <span className="font-bold uppercase text-sky-100">{title}</span>
         <AddButton onClickFunction={addMethod} />
       </div>
-      <div className="flex min-h-minContainer">{children}</div>
+      <div className="flex min-h-minContainer flex-wrap">{children}</div>
     </div>
   );
 }
