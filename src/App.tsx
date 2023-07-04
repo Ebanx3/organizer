@@ -27,7 +27,9 @@ const themeColors = {
 };
 
 function App() {
-  const [color, setColor] = useState<ThemeColors>(cookies.get("color") || "sy");
+  const [color, setColor] = useState<ThemeColors>(
+    cookies.get("color") || "sky"
+  );
   const [showConfig, setShowConfig] = useState(false);
   const [content, setContent] = useState<Content>(
     JSON.parse(
