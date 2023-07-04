@@ -27,7 +27,7 @@ const themeColors = {
 };
 
 function App() {
-  const [color, setColor] = useState<ThemeColors>(cookies.get("color"));
+  const [color, setColor] = useState<ThemeColors>(cookies.get("color") || "sy");
   const [showConfig, setShowConfig] = useState(false);
   const [content, setContent] = useState<Content>(
     JSON.parse(
