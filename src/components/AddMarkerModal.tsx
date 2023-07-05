@@ -29,7 +29,7 @@ export default function AddMarkerModal({
       return;
     }
     let linkToUse = link;
-    if (!link.startsWith("http://") || !link.startsWith("https://")) {
+    if (!link.startsWith("http://") && !link.startsWith("https://")) {
       linkToUse = "http://" + link;
     }
 
