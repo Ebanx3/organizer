@@ -33,7 +33,8 @@ function App() {
   const [showConfig, setShowConfig] = useState(false);
   const [content, setContent] = useState<Content>(
     JSON.parse(
-      localStorage.getItem("content") || '{"markers":[],"links":[],"notes":[]}'
+      localStorage.getItem("content") ||
+        '{"markers":[{"title":"facebook","link":"http://www.facebook.com","imgUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Logo_de_Facebook.png/220px-Logo_de_Facebook.png"},{"title":"instagram","link":"http://www.instagram.com","imgUrl":"https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg"},{"title":"linkedin","link":"http://www.linkedin.com","imgUrl":"https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw"},{"title":"gmail","link":"http://mail.google.com/mail/u/0/#inbox","imgUrl":"https://play-lh.googleusercontent.com/KSuaRLiI_FlDP8cM4MzJ23ml3og5Hxb9AapaGTMZ2GgR103mvJ3AAnoOFz1yheeQBBI"},{"title":"chat gpt","link":"http://chat.openai.com","imgUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1200px-ChatGPT_logo.svg.png"},{"title":"twitter","link":"http://www.twitter.com","imgUrl":"https://store-images.s-microsoft.com/image/apps.45406.9007199266244427.4d45042b-d7a5-4a83-be66-97779553b24d.2a88a418-b96d-44a6-ad4f-5e0ee6289b2c"}],"links":[],"notes":[{"content":"Copia la dirección de una imagen al ingresar un nuevo marcador para que te muestre el icono","date":"30-mayo"},{"content":"Ponle descripción a un enlace y te lo mostrara al colocar el puntero del mouse encima","date":"30-mayo"}]}'
     )
   );
 
