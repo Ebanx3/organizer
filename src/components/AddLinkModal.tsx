@@ -29,9 +29,12 @@ export default function AddLinkModal({
       return;
     }
     let linkToUse = link;
+    console.log(linkToUse);
     if (!link.startsWith("http://") && !link.startsWith("https://")) {
-      linkToUse = "http://" + link;
+      linkToUse = "https://" + link;
     }
+    console.log(linkToUse);
+
     const newElement = {
       title,
       link: linkToUse,

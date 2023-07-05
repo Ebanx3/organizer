@@ -12,7 +12,12 @@ export default function NoteContainer({
   return (
     <div className="w-full max-h-80vh min-h-40vh flex flex-wrap">
       {content.notes.map((note) => (
-        <Note note={note} removeNote={removeNote} setNote={setNote} />
+        <Note
+          key={note.content}
+          note={note}
+          removeNote={removeNote}
+          setNote={setNote}
+        />
       ))}
     </div>
   );
